@@ -49,10 +49,10 @@
     </section>
     <section id="datos">
 
-          <div id="data"> 
+          <div class="data"> 
 
                   <img src="images.png" alt="imagen credencial" id="imagen1">
-
+                    <div>
                     <h2>DATOS PERSONALES</h2>
                      
                  
@@ -60,50 +60,57 @@
                     esto me permitio adquirir una gran experiencia como programador web.
                     Me agrada mucho mi trabajo y, por ello, intento estar al dia con las ultimas tecnologias web.
                     Actualmente ofrezco mis servicios a clientes de Latinoamerica y de distintas partes del mundo. (paises de habla Hispana).</p1>
+                  </div>
+                  <div>
                     <p2>Junto con Diseñadores Web formo un equipo con el que llevamos a cabo Sitios Web con las últimas tendencias en diseño y programación para clientes pequeños y grandes.
                       Mantenemos una estructura que nos permite desarrollar Sitios Web integrales para cada caso. 
                       Trabajamos de manera conjunta con nuestros clientes para lograr una rápida y eficaz solución a cada problema, asesorando y coordinando hasta el último detalle.</p2>
-       </div>
+                    </div>           
+                 </div>
     </section>
 
     <section id="estudios">
 
-      <div class="studies">
+       <div class="studies">
 
-         <img class="img__nota" src="estudio.png" alt="plan_estudios" id="imagen2">
+           <img class="img__nota" src="estudio.png" alt="plan_estudios" id="imagen2">
             
              <h2>ESTUDIOS</h2>
 
-      
+            <div>
              <p2>Estudios secundarios completos: titulo en <strong>ECONOMÍA Y GESTIÓN</strong></p2>
-     
-       
+            </div>
+            <div>
              <p3>Curso de PC bajo entorno grafico y symbol, 
               Manejo las siguientes tecnologias MySQL, phpMyAdmin, PHP4/5, 
               Programming, Web Design, AJAX, PHP, HTML, CSS, ASP, DOM, BOM , W3C,
                W3C (CSS), JQUERY.
              </p3>
-     
+            </div>
+            <div>
              <p4>Ingles: nivel basico</p4>
-           
-      </div>
+           </div>
+        </div>
     </section>
 
 
     <section id="trabajos">
+
        <div class="tex__conteiner">
+
           <h2 class="trabajo">TRABAJOS</h2>
-            
-          <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices libero et laoreet ultricies.
+           <div> 
+              <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices libero et laoreet ultricies.
                 Vivamus auctor feugiat nisi, sit amet auctor turpis tempus eu. Vestibulum placerat, tellus quis elementum venenatis, nibh ipsum posuere mauris,
                 nec malesuada ipsum est sed purus. Donec porta ultricies nulla, at finibus velit dapibus ut. Aenean vel iaculis elit,
-                sit amet porta quam. Donec quis vehicula arcu, a tempor ex. Maecenas in enim viverra, efficitur justo vitae, aliquam nisi. Nullam id gravida dolor.</p1>
-
+                 sit amet porta quam. Donec quis vehicula arcu, a tempor ex. Maecenas in enim viverra, efficitur justo vitae, aliquam nisi. Nullam id gravida dolor.</p1>
+            </div>
           <p2> Donec ullamcorper consequat ultrices. Aenean cursus tempus consectetur. Fusce tempor dolor vitae quam lobortis vulputate. 
                 Maecenas lacus nunc, porta suscipit congue in, elementum vitae est. Pellentesque eros est, malesuada id scelerisque quis,
                 dignissim vitae lorem. Duis congue, arcu eget sollicitudin euismod, risus augue luctus massa, vel facilisis justo sapien ac sapien.</p2>
-        
-       </div>
+            <div>
+             
+        </div>
 
 
 
@@ -122,7 +129,7 @@
 
             <input type="submit" value="enviar" class="form__cta"> 
 
-      </div>
+        </div>
 
 
 
@@ -131,8 +138,22 @@
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/script.js"></script>
-  
+ 
+  <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {  
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+  </script>
 
   
     
