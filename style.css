@@ -29,6 +29,7 @@ header {
     justify-content: space-between;
     align-items:center; 
     position: fixed;
+    transition: 300ms;
 }
 
 #icon_menu {
@@ -57,7 +58,7 @@ header {
 nav ul li {
     margin: 15px;
     list-style: none;
-    padding: 25px 0;
+    padding: 20px 0;
     margin-left: 90px;
     float: left;
     position: relative;
