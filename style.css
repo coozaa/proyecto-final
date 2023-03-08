@@ -29,7 +29,11 @@ header {
     justify-content: space-between;
     align-items:center; 
     position: fixed;
+    transition: all 500ms;
+    
 }
+
+
 
 #icon_menu {
 
