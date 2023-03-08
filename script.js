@@ -1,14 +1,5 @@
-$(document).ready(function(){
-    $("a").on('click', function(event) {  
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      } 
-    });
-  });
-  
+document.getElementById("icon_menu").addEventListener("click", mostrar_menu);
+
+function mostrar_menu() {
+    document.querySelector(".menu__conteiner").classList.toggle("mostrar_menu");
+}
