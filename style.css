@@ -55,10 +55,11 @@ header {
 }
 
 nav ul li {
+
     margin: 15px;
     list-style: none;
     padding: 25px 0;
-    margin-left: 90px;
+    margin-left: 70px;
     float: left;
     position: relative;
 }
@@ -335,6 +336,10 @@ nav ul li a {
      
 }
 
+nav ul li a:hover::before {
+    display: none;
+}
+
 
 
 }
@@ -342,7 +347,7 @@ nav ul li a {
 
 
 
-@media (max-width: 414px) {
+@media (max-width: 750px) {
 
 .menu__conteiner {
         height: 0px;
@@ -396,8 +401,8 @@ img {
 }
 
 #icon_menu {
-padding: 10px;
-margin: 10px;    
+padding: 20px;
+margin: 20px;    
 display: block;
 cursor: pointer;
 font-size: 24px;
